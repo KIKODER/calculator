@@ -1,0 +1,19 @@
+* {
+    background-color: rgb(130, 130, 145);
+    color: antiquewhite;
+}
+
+.base {
+    background-color: antiquewhite;
+    width: 400px;
+}
+
+.screen {
+    background-color: rgb(168, 168, 177);
+}
+
+.footer {
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+}
