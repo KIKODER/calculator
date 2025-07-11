@@ -1,0 +1,14 @@
+#calculator {
+    background-color: gray;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#display {
+    margin: 5px;
+}
+
+button {
+    width: 100px;
+}
