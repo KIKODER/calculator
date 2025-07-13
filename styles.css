@@ -8,21 +8,29 @@ body {
 #calculator {
     background-color: gray;
     max-width: 50vw;
+    border-radius: 10px;
     overflow: hidden;
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-;
+    padding: 15px;
 }
 
 #display {
-    margin: 5px;
+    margin: 15px;
     height: 4rem;
+    border-radius: 10px;
+    border: none;
+}
+
+#functions {
+    display: flex;
+    justify-content: flex-end;
 }
 
 button {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
     border: none;
     font-size: 2rem;
@@ -34,4 +42,8 @@ button {
 
 button:hover {
     background-color: rgb(159, 159, 159);
+}
+
+.op {
+    background-color: rgb(230, 143, 12);
 }
