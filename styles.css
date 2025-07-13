@@ -1,4 +1,17 @@
+:root {
+    --bgcolor: #550000;
+    --calcolor: #AA3939;
+    --dcolor: #ffa8a8;
+    --bcolor: #d46a6abc;
+    --bcolorhover: #D46A6A;
+    --opcolor: #801505b5;
+    --opcolorhover: #801505;
+    --funcolor: #600202c2;
+    --funcolorhover: #550000;
+}
+
 body {
+    background-color: var(--bgcolor);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -6,8 +19,8 @@ body {
 }
 
 #calculator {
-    background-color: gray;
-    max-width: 50vw;
+    background-color: var(--calcolor);
+    max-width: 420px;
     border-radius: 10px;
     overflow: hidden;
     height: 80vh;
@@ -17,15 +30,21 @@ body {
 }
 
 #display {
+    background-color: var(--dcolor);
     margin: 15px;
-    height: 4rem;
+    height: 4.5rem;
     border-radius: 10px;
     border: none;
 }
 
+#keys {
+    margin-top: 2rem;
+    
+}
+
 #functions {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 button {
@@ -35,15 +54,27 @@ button {
     border: none;
     font-size: 2rem;
     font-weight: bold;
-    background-color: rgb(202, 202, 202);
+    background-color: var(--bcolor);
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(159, 159, 159);
+    background-color: var(--bcolorhover);
 }
 
 .op {
-    background-color: rgb(230, 143, 12);
+    background-color: var(--opcolor);
+}
+
+.op:hover {
+    background-color: var(--opcolorhover);
+}
+
+.fun {
+    background-color: var(--funcolor);
+}
+
+.fun:hover {
+    background-color: var(--funcolorhover);
 }
