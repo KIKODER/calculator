@@ -2,11 +2,11 @@
     --bgcolor: #550000;
     --calcolor: #AA3939;
     --dcolor: #ffa8a8;
-    --bcolor: #d46a6abc;
-    --bcolorhover: #D46A6A;
+    --bcolor: #D46A6A;;
+    --bcolorhover: #d46a6abc;
     --opcolor: #801505b5;
     --opcolorhover: #801505;
-    --funcolor: #600202c2;
+    --funcolor: #600202da;
     --funcolorhover: #550000;
 }
 
@@ -23,7 +23,7 @@ body {
     max-width: 420px;
     border-radius: 10px;
     overflow: hidden;
-    height: 80vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -32,19 +32,20 @@ body {
 #display {
     background-color: var(--dcolor);
     margin: 15px;
-    height: 4.5rem;
+    height: 6rem;
     border-radius: 10px;
     border: none;
 }
 
 #keys {
-    margin-top: 2rem;
-    
+    margin-top: 1.5rem;
 }
 
 #functions {
     display: flex;
     justify-content: space-around;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 button {
@@ -57,6 +58,7 @@ button {
     background-color: var(--bcolor);
     color: white;
     cursor: pointer;
+    margin: 1px;
 }
 
 button:hover {
@@ -73,6 +75,8 @@ button:hover {
 
 .fun {
     background-color: var(--funcolor);
+    border-radius: 10px;
+    flex: auto;
 }
 
 .fun:hover {
