@@ -33,6 +33,8 @@ body {
     background-color: var(--dcolor);
     margin: 15px;
     height: 6rem;
+    font-size: 4rem;
+    color: var(--bgcolor);
     border-radius: 10px;
     border: none;
 }
