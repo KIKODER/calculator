@@ -69,6 +69,20 @@ button:hover {
     transform: scale(1.08);
 }
 
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--funcolor);
+    text-decoration: none;
+}
+
 .op {
     background-color: var(--opcolor);
 }

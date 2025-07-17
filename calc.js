@@ -81,6 +81,7 @@ document.addEventListener("keydown", (e) => {
             shouldResetDisplay = false;
         }
         display.value += e.key;
+        
     } 
     else if (e.key === "." && !display.value.includes(".")) {
         if (shouldResetDisplay) {
