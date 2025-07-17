@@ -14,7 +14,6 @@ function div(x, y) {
 function operate(firstNum, operator, lastNum) {
     firstNum = Number(firstNum);
     lastNum = Number(lastNum);
-
     switch (operator) {
         case "+":
             return add(firstNum, lastNum);
@@ -37,6 +36,7 @@ const display = document.getElementById("display");
 const numbers = document.querySelectorAll(".num");
 const clear = document.getElementById("clear");
 const operators = document.querySelectorAll(".op");
+const equal = document.getElementById("equal");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
@@ -52,3 +52,11 @@ operators.forEach(button => {
     });
 });
 
+clear.addEventListener("click", () => {
+    display.value = "";
+});
+
+equal.addEventListener("click", () => {
+    lNum = display.value;
+    display.value = operate(fNum, op, lNum);
+});
