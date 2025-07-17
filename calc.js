@@ -36,10 +36,19 @@ let lNum = "";
 const display = document.getElementById("display");
 const numbers = document.querySelectorAll(".num");
 const clear = document.getElementById("clear");
+const operators = document.querySelectorAll(".op");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
         display.value += button.textContent;
+    });
+});
+
+operators.forEach(button => {
+    button.addEventListener("click", () => {
+        fNum = display.value;
+        op = button.textContent;
+        display.value = "";
     });
 });
 
