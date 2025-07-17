@@ -19,18 +19,27 @@ function div(x, y) {
 function operate(firstNum, operator, lastNum) {
     firstNum = Number(firstNum);
     lastNum = Number(lastNum);
+    let result;
     switch (operator) {
         case "+":
-            return add(firstNum, lastNum);
+            result = add(firstNum, lastNum);
+            break;
         case "-":
-            return sub(firstNum, lastNum);
+            result = sub(firstNum, lastNum);
+            break;
         case "*":
-            return mult(firstNum, lastNum);
+            result = mult(firstNum, lastNum);
+            break;
         case "/":
-            return div(firstNum, lastNum);
+            result = div(firstNum, lastNum);
+            break;
         default:
             return null;
     }
+    if (!Number.isInteger(result)) {
+        result = parseFloat(result.toFixed(4));
+    }
+    return result;
 }
 
 let fNum = "";
