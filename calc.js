@@ -8,7 +8,12 @@ function mult(x, y) {
     return x * y;
 }
 function div(x, y) {
-    return x / y;
+    if (y == 0) {
+        return "Nice try...";
+    }
+    else {
+        return x / y;
+    }
 }
 
 function operate(firstNum, operator, lastNum) {
