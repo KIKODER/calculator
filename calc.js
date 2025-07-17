@@ -44,6 +44,7 @@ const numbers = document.querySelectorAll(".num");
 const clear = document.getElementById("clear");
 const operators = document.querySelectorAll(".op");
 const equal = document.getElementById("equal");
+const plusminus = document.getElementById("plusminus");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
@@ -71,4 +72,8 @@ equal.addEventListener("click", () => {
     lNum = display.value;
     display.value = operate(fNum, op, lNum);
     shouldResetdisplay = true;
+});
+
+plusminus.addEventListener("click", () => {
+    display.value = display.value * -1;
 });
