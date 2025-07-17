@@ -11,10 +11,6 @@ function div(x, y) {
     return x / y;
 }
 
-let fNum = {};
-let op = {};
-let lNum = {};
-
 function operate(firstNum, operator, lastNum) {
     firstNum = Number(firstNum);
     lastNum = Number(lastNum);
@@ -32,4 +28,18 @@ function operate(firstNum, operator, lastNum) {
             return null;
     }
 }
+
+let fNum = {};
+let op = {};
+let lNum = {};
+
+const display = document.getElementById("display");
+const numbers = document.querySelectorAll(".num");
+const clear = document.getElementById("clear");
+
+numbers.forEach(button => {
+    button.addEventListener("click", () => {
+        display.value += button.textContent;
+    });
+});
 
