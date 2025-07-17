@@ -29,9 +29,9 @@ function operate(firstNum, operator, lastNum) {
     }
 }
 
-let fNum = {};
-let op = {};
-let lNum = {};
+let fNum = "";
+let op = "";
+let lNum = "";
 
 const display = document.getElementById("display");
 const numbers = document.querySelectorAll(".num");
