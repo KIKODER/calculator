@@ -54,6 +54,7 @@ const clear = document.getElementById("clear");
 const operators = document.querySelectorAll(".op");
 const equal = document.getElementById("equal");
 const plusminus = document.getElementById("plusminus");
+const decimal = document.getElementById("decimal");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
@@ -71,6 +72,16 @@ operators.forEach(button => {
         op = button.textContent;
         display.value = "";
     });
+});
+
+decimal.addEventListener("click", () => {
+    if (shouldResetdisplay) {
+        display.value = "0";
+        shouldResetdisplay = false;
+    }
+    if (!display.value.includes(".")) {
+        display.value += ".";
+    }
 });
 
 clear.addEventListener("click", () => {
