@@ -32,6 +32,8 @@ let fNum = "";
 let op = "";
 let lNum = "";
 
+let shouldResetdisplay = false;
+
 const display = document.getElementById("display");
 const numbers = document.querySelectorAll(".num");
 const clear = document.getElementById("clear");
@@ -40,6 +42,10 @@ const equal = document.getElementById("equal");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
+        if (shouldResetdisplay) {
+            display.value = "";
+            shouldResetdisplay = false;
+        }
         display.value += button.textContent;
     });
 });
@@ -59,4 +65,5 @@ clear.addEventListener("click", () => {
 equal.addEventListener("click", () => {
     lNum = display.value;
     display.value = operate(fNum, op, lNum);
+    shouldResetdisplay = true;
 });
